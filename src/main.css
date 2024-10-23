@@ -23,3 +23,7 @@
 .hide-mobile {
 	display: none;
 }
+
+.wrapper {
+	padding: 1em;
+}
