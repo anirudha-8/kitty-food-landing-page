@@ -1,0 +1,25 @@
+/* font families */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* css variables */
+:root {
+	--theme-color: #ffa800;
+	--font-color: #000000;
+	--bg-color: #fffbf3;
+
+	--sans-serif-ff: "Inter", sans-serif;
+}
+
+/* css resets */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* utility classes */
+.hide-mobile {
+	display: none;
+}
