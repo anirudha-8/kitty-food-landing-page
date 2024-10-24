@@ -32,7 +32,7 @@ body {
 }
 
 .wrapper {
-	padding: 1em;
+	padding: 2em 1em;
 }
 
 .menu-toggle-helper {
@@ -40,7 +40,6 @@ body {
 }
 
 /* ========== header section styling ========== */
-
 header {
 	display: flex;
 	justify-content: space-between;
@@ -79,9 +78,89 @@ header {
 				}
 
 				&:nth-child(1) {
-					margin-top: 1em;
+					margin-top: 2em;
 				}
 			}
 		}
+	}
+}
+
+/* css for responsive header */
+@media (min-width: 1024px) {
+	.wrapper {
+		padding: 3em;
+	}
+
+	.hide-mobile {
+		display: block;
+	}
+
+	.header-left {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 250px;
+
+		.divider {
+			width: 1px;
+			height: 40px;
+			border: 1px solid gray;
+		}
+
+		.home {
+			color: var(--font-color);
+			text-decoration: none;
+			font-size: 1.4rem;
+			transition: color 0.2s;
+
+			&:hover {
+				color: var(--theme-color);
+			}
+		}
+	}
+
+	.hide-desktop {
+		display: none;
+	}
+
+	header {
+		margin-bottom: 2em;
+
+		nav {
+			ul {
+				/* unset all styling to style for larger devices */
+				position: static;
+				z-index: 0;
+				background-color: transparent;
+				height: auto;
+				width: auto;
+				text-align: left;
+				padding: 0;
+				line-height: 1.5;
+				margin-top: 0.5em;
+				transform: unset;
+
+				/* new styling for large devices */
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 3em;
+
+				li {
+					margin: 0;
+
+					&:nth-child(1) {
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1920px) {
+	.wrapper {
+		max-width: 1024px;
+		margin: 0 auto;
 	}
 }
