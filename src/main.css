@@ -35,6 +35,10 @@ body {
 	padding: 1em;
 }
 
+.menu-toggle-helper {
+	transform: translateX(0%);
+}
+
 /* ========== header section styling ========== */
 
 header {
@@ -57,6 +61,8 @@ header {
 			/* moving nav>ul to full right */
 			transform: translateX(100%);
 
+			transition: transform 0.4s;
+
 			li {
 				margin-top: 2em;
 
@@ -70,6 +76,10 @@ header {
 					&:hover {
 						color: var(--theme-color);
 					}
+				}
+
+				&:nth-child(1) {
+					margin-top: 1em;
 				}
 			}
 		}
