@@ -43,6 +43,7 @@ body {
 header {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 2em;
 
 	nav {
 		ul {
@@ -163,4 +164,39 @@ header {
 		max-width: 1024px;
 		margin: 0 auto;
 	}
+}
+
+/* hero section styling */
+h1,
+p {
+	text-align: center;
+}
+
+h1 {
+	margin-top: 1em;
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+p {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	margin-top: 1em;
+}
+
+a.primary-cta {
+	background-color: var(--theme-color);
+	color: var(--font-color);
+	text-decoration: none;
+	padding: 1em;
+	width: 100%;
+	display: block;
+	border-radius: 0.3em;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.4rem;
+	margin-top: 1em;
 }
