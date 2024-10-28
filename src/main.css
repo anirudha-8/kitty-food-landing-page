@@ -215,7 +215,8 @@ a.primary-cta {
 	overflow: hidden;
 
 	img {
-		width: 70%;
+		width: 80%;
+		/* max-width: 300px; */
 		position: absolute;
 		left: 50%;
 		top: 10%;
@@ -227,14 +228,14 @@ a.primary-cta {
 		position: absolute;
 		border-radius: 50%;
 		left: 50%;
-		top: 30%;
+		top: 40%;
 		transform: translate(-50%, -50%);
 	}
 
 	.inner-circle {
 		background-color: #ffebc3;
-		width: 300px;
-		height: 300px;
+		width: 200px;
+		height: 200px;
 		z-index: -1;
 	}
 
