@@ -246,3 +246,8 @@ a.primary-cta {
 		z-index: -2;
 	}
 }
+
+/* media query for hero-section in medium-large devices */
+
+@media (min-width: px) {
+}
