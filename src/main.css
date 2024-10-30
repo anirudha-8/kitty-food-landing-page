@@ -285,3 +285,58 @@ a.primary-cta {
 		}
 	}
 }
+
+/* media queries for large devices */
+
+@media (min-width: 920px) {
+	.wrapper {
+		margin: 0 8em;
+	}
+	header {
+		margin-top: -2em;
+	}
+	main {
+		width: 50%;
+		margin-top: 5em;
+
+		h1,
+		p {
+			text-align: left;
+		}
+
+		h1 {
+			font-size: 3rem;
+		}
+
+		h1 img {
+			width: 60%;
+			margin: 0;
+		}
+
+		a.primary-cta {
+			display: inline-block;
+			width: auto;
+		}
+	}
+
+	.cat-container {
+		width: 50%;
+		position: absolute;
+		top: 10%;
+		right: 0;
+		/* z-index: -1; */
+
+		.cat {
+			overflow: visible;
+
+			.inner-circle {
+				top: 50%;
+			}
+
+			.outer-circle {
+				width: 800px;
+				height: 800px;
+			}
+		}
+	}
+}
