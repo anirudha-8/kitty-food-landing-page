@@ -8,7 +8,7 @@ A fully responsive and visually appealing website for a cat food brand, designed
 
 ## Folder Structure
 
-```
+```bash
 - .git
 - reference-images
 - src
